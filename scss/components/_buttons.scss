@@ -1,0 +1,12 @@
+@use "../themes/colors";
+
+@mixin button-style{
+  color: colors.$color-button-text;
+  background-color: colors.$button-background-dark;
+  background-image: linear-gradient(to right, colors.$button-background-dark, colors.$button-background-light);
+  border-radius: 3px;
+  text-transform: uppercase;
+  border: none;
+  text-decoration: none;
+  font-size: 11px;
+}
