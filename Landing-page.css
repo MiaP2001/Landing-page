@@ -326,6 +326,7 @@ main section.trip {
   display: flex;
   flex-wrap: wrap;
   gap: 21px;
+  z-index: 4;
 }
 @media (min-width: 599px) {
   main section.trip {
@@ -483,10 +484,6 @@ main section.info-cards .title h3 {
   margin-top: 0;
   margin-bottom: 16.4px;
 }
-main section.info-cards .background-image-3 img {
-  position: relative;
-  top: 348px;
-}
 main section.info-cards .cards {
   display: flex;
   gap: 17.45px;
@@ -539,7 +536,7 @@ main section.info-cards .cards p {
     font-size: 16px;
   }
 }
-main section.info-cards .cards .python {
+main section.info-cards .python {
   max-width: 157px;
   padding: 34px 21.8px 31.4px 21.8px;
   border-radius: 3.4px;
@@ -548,12 +545,12 @@ main section.info-cards .cards .python {
   z-index: 4;
 }
 @media (min-width: 1299px) {
-  main section.info-cards .cards .python {
+  main section.info-cards .python {
     max-width: 290px;
     padding: 78px 50px 72px;
   }
 }
-main section.info-cards .cards .iost {
+main section.info-cards .iost {
   max-width: 157px;
   padding: 34px 21.8px 31.4px 21.8px;
   border-radius: 3.4px;
@@ -561,27 +558,27 @@ main section.info-cards .cards .iost {
   color: white;
 }
 @media (min-width: 1299px) {
-  main section.info-cards .cards .iost {
+  main section.info-cards .iost {
     max-width: 290px;
     padding: 78px 50px 72px;
   }
 }
-main section.info-cards .cards .iost h4 {
+main section.info-cards .iost h4 {
   color: white;
 }
-main section.info-cards .cards .iost p {
+main section.info-cards .iost p {
   color: white;
 }
-main section.info-cards .cards .responsive {
+main section.info-cards .responsive {
   display: none;
   z-index: 4;
 }
 @media (min-width: 799px) {
-  main section.info-cards .cards .responsive {
+  main section.info-cards .responsive {
     display: grid;
   }
 }
-main section.info-cards .cards .responsive .stacks {
+main section.info-cards .responsive .stacks {
   max-width: 157px;
   padding: 34px 21.8px 31.4px 21.8px;
   border-radius: 3.4px;
@@ -589,79 +586,75 @@ main section.info-cards .cards .responsive .stacks {
   background-image: linear-gradient(white, rgba(100, 123, 100, 0.11));
 }
 @media (min-width: 1299px) {
-  main section.info-cards .cards .responsive .stacks {
+  main section.info-cards .responsive .stacks {
     max-width: 290px;
     padding: 78px 50px 72px;
   }
 }
-main section.info-cards .background-image-4 img {
-  position: relative;
-  left: 1100px;
-  bottom: 130px;
-}
-main section.Dream-Team {
+
+section.Dream-Team {
   display: flex;
   margin-left: -286px;
   margin-bottom: 48.4px;
   margin-top: 100px;
 }
 @media (min-width: 999px) {
-  main section.Dream-Team {
+  section.Dream-Team {
     margin-left: 0;
   }
 }
-main section.Dream-Team .image {
+section.Dream-Team .image {
   margin-right: 27px;
   margin-top: 86.4px;
 }
 @media (min-width: 599px) {
-  main section.Dream-Team .image {
+  section.Dream-Team .image {
     margin-right: 80px;
   }
 }
-main section.Dream-Team .image img {
+section.Dream-Team .image img {
   height: 307px;
   width: auto;
 }
 @media (min-width: 599px) {
-  main section.Dream-Team .image img {
+  section.Dream-Team .image img {
     height: 400px;
   }
 }
 @media (min-width: 1299px) {
-  main section.Dream-Team .image img {
+  section.Dream-Team .image img {
     width: 600px;
     height: auto;
   }
 }
-main section.Dream-Team .section-content {
+section.Dream-Team .section-content {
   margin-top: 147.4px;
 }
 @media (min-width: 599px) {
-  main section.Dream-Team .section-content {
+  section.Dream-Team .section-content {
     width: 300px;
     margin-right: 30px;
   }
 }
 @media (min-width: 1299px) {
-  main section.Dream-Team .section-content {
+  section.Dream-Team .section-content {
     max-width: 412px;
     margin-top: 225px;
   }
 }
-main section.Dream-Team .section-content h2 {
+section.Dream-Team .section-content h2 {
   margin-bottom: 8px;
   margin-top: 0;
 }
-main section.Dream-Team .section-content h3 {
+section.Dream-Team .section-content h3 {
   margin-bottom: 16.2px;
   margin-top: 0;
 }
-main section.Dream-Team .section-content p {
+section.Dream-Team .section-content p {
   margin-bottom: 42.3px;
   margin-top: 0;
 }
-main section.Dream-Team .section-content a {
+section.Dream-Team .section-content a {
   color: rgb(254, 254, 254);
   background-color: rgb(100, 123, 100);
   background-image: linear-gradient(to right, rgb(100, 123, 100), rgb(102, 172, 102));
@@ -673,113 +666,114 @@ main section.Dream-Team .section-content a {
   padding: 15.2px 12px 14.5px 16.2px;
 }
 @media (min-width: 1299px) {
-  main section.Dream-Team .section-content a {
+  section.Dream-Team .section-content a {
     padding: 27px 22px 26px 29px;
   }
 }
-main section.Dream-Team .section-content a img {
+section.Dream-Team .section-content a img {
   margin-left: 71.5px;
 }
 @media (min-width: 1299px) {
-  main section.Dream-Team .section-content a img {
+  section.Dream-Team .section-content a img {
     margin-left: 142px;
   }
 }
+
 @media (min-width: 1099px) {
-  main section.people {
+  section.people {
     justify-content: center;
   }
 }
-main section.people h2 {
+section.people h2 {
   margin-top: 0;
   margin-bottom: 8px;
 }
-main section.people h3 {
+section.people h3 {
   margin-top: 0;
   margin-bottom: 15.5px;
 }
-main section.people .cards {
+section.people .cards {
   margin-bottom: 64.8px;
 }
 @media (min-width: 599px) {
-  main section.people .cards {
+  section.people .cards {
     display: flex;
     gap: 20px;
   }
 }
-main section.people .cards .card {
+section.people .cards .card {
   width: 230px;
   background-image: linear-gradient(white, rgba(100, 123, 100, 0.11));
   border-radius: 5px;
   padding: 20.7px 16.3px 20.8px 26px;
 }
 @media (min-width: 1299px) {
-  main section.people .cards .card {
+  section.people .cards .card {
     width: 330px;
     padding: 23px 23px 23px 30px;
   }
 }
-main section.people .cards .card .card-title {
+section.people .cards .card .card-title {
   position: absolute;
   margin-left: 110px;
 }
 @media (min-width: 1299px) {
-  main section.people .cards .card .card-title {
+  section.people .cards .card .card-title {
     margin-left: 165px;
   }
 }
-main section.people .cards .card .card-title h5 {
+section.people .cards .card .card-title h5 {
   margin-bottom: 3.2px;
   margin-top: 10px;
 }
-main section.people .cards .card .card-title h6 {
+section.people .cards .card .card-title h6 {
   margin-top: 0;
   margin-bottom: 15.5px;
 }
-main section.people .cards .card .card-image img {
+section.people .cards .card .card-image img {
   width: 103px;
   height: auto;
 }
 @media (min-width: 1299px) {
-  main section.people .cards .card .card-image img {
+  section.people .cards .card .card-image img {
     width: 159px;
     height: auto;
   }
 }
-main section.people .cards .card .card-info p {
+section.people .cards .card .card-info p {
   font-style: italic;
   font-size: 12px;
   margin-top: 10px;
   margin-bottom: 0;
 }
 @media (min-width: 1299px) {
-  main section.people .cards .card .card-info p {
+  section.people .cards .card .card-info p {
     font-size: 16px;
     max-width: 260px;
   }
 }
-main section.people .cards .responsive-1 {
+section.people .cards .responsive-1 {
   display: none;
 }
 @media (min-width: 699px) {
-  main section.people .cards .responsive-1 {
+  section.people .cards .responsive-1 {
     display: block;
   }
 }
-main section.people .cards .responsive-2 {
+section.people .cards .responsive-2 {
   display: none;
 }
 @media (min-width: 1099px) {
-  main section.people .cards .responsive-2 {
+  section.people .cards .responsive-2 {
     display: block;
   }
 }
-main section.people .cards .responsive-2 .card-image img {
+section.people .cards .responsive-2 .card-image img {
   width: 116px;
   height: auto;
 }
 @media (min-width: 1299px) {
-  main section.people .cards .responsive-2 .card-image img {
+  section.people .cards .responsive-2 .card-image img {
     width: 180px;
     height: auto;
   }

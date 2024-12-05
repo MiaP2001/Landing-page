@@ -263,6 +263,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     gap: 21px;
+    z-index: 4;
     @include responsive.md{
       gap: 70px;
       margin-bottom: 100px;
@@ -386,12 +387,6 @@ main{
         margin-bottom: 16.4px;
       }
     }
-    .background-image-3{
-      img{
-        position: relative;
-        top: 348px;
-      }
-    }
     .cards{
       display: flex;
       gap: 17.45px;
@@ -432,6 +427,7 @@ main{
         @include responsive.xxl{
           font-size: 16px;
         }
+      }
       }
       .python{
         max-width: 157px;
@@ -479,13 +475,6 @@ main{
             padding: 78px 50px 72px;
           }
         }
-      }
-    }
-    .background-image-4{
-      img{
-        position: relative;
-        left: 1100px;
-        bottom: 130px;
       }
     }
   }
@@ -641,7 +630,6 @@ main{
       }
     }
   }
-}
 
 footer{
   background-color: colors.$footer-background;
