@@ -375,7 +375,6 @@ main{
   }
 
   section.info-cards{
-    margin-right: -32px;
     .title{
       justify-items: center;
       h2{
@@ -393,8 +392,6 @@ main{
       margin-left: 14px;
       @include responsive.md{
         gap: 40px;
-      }
-      @include responsive.md-999{
         justify-content: center;
       }
       .icon-image{
@@ -428,19 +425,46 @@ main{
           font-size: 16px;
         }
       }
+      .card {
+        position: relative;
+        max-width: 338px;
       }
-      .python{
-        max-width: 157px;
-        padding: 34px 21.8px 31.4px 21.8px;
-        border-radius: 3.4px;
-        background-color: white;
-        background-image: linear-gradient(white, colors.$python-background-1);
-        z-index: 4;
-        @include responsive.xxl{
-          max-width: 290px;
-          padding: 78px 50px 72px;
+        img.background-image-python {
+          width: 93.4px;
+          height: auto;
+          position: absolute;
+          z-index: 1;
+          top: 115px;
+          left: -15px;
+          @include responsive.xs{
+            top: 76px;
+          }
+          @include responsive.md{
+            top:116px;
+          }
+          @include responsive.xxl{
+            width: 214px;
+            height: auto;
+            left: -35px;
+            top: 135px;
+          }
         }
-      }
+        .python {
+          max-width: 157px;
+          padding: 34px 21.8px 31.4px;
+          border-radius: 3.4px;
+          background-color: white;
+          background-image: linear-gradient(white, colors.$python-background-1);
+          z-index: 4;
+          position: relative;
+
+          @include responsive.xxl {
+            max-width: 338px;
+            height: auto;
+            padding: 78px 50px 72px;
+          }
+        }
+
       .iost{
         max-width: 157px;
         padding: 34px 21.8px 31.4px 21.8px;
@@ -448,7 +472,7 @@ main{
         background: colors.$iost-background;
         color: white;
         @include responsive.xxl{
-          max-width: 290px;
+          max-width: 338px;
           padding: 78px 50px 72px;
         }
         h4{
@@ -460,9 +484,21 @@ main{
       }
       .responsive{
         display: none;
-        z-index: 4;
+        position: relative;
         @include responsive.md-799{
           display: grid;
+        }
+        img.background-image-stacks{
+          position: absolute;
+          z-index: 1;
+          top: 100px;
+          left: 100px;
+          width: 240px;
+          height: auto;
+          @include responsive.xxl{
+            width: 463px;
+            height: auto;
+          }
         }
         .stacks{
           max-width: 157px;
@@ -470,8 +506,11 @@ main{
           border-radius: 3.4px;
           background-color: white;
           background-image: linear-gradient(white, colors.$python-background-1);
+          position: relative;
+          z-index: 4;
           @include responsive.xxl{
-            max-width: 290px;
+            max-width: 338px;
+            height: auto;
             padding: 78px 50px 72px;
           }
         }
@@ -630,6 +669,7 @@ main{
       }
     }
   }
+}
 
 footer{
   background-color: colors.$footer-background;
