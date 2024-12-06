@@ -120,6 +120,9 @@ header .menu ul li a {
   text-decoration: none;
   color: rgb(79, 79, 79);
 }
+header .menu ul li a:hover {
+  text-decoration: underline;
+}
 header .menu button {
   color: rgb(254, 254, 254);
   background-color: rgb(100, 123, 100);
@@ -327,6 +330,7 @@ main section.trip {
   flex-wrap: wrap;
   gap: 21px;
   z-index: 4;
+  height: max-content;
 }
 @media (min-width: 599px) {
   main section.trip {
@@ -337,7 +341,7 @@ main section.trip {
 @media (min-width: 999px) {
   main section.trip {
     max-width: 500px;
-    margin-top: 90px;
+    margin-top: 230px;
   }
 }
 @media (min-width: 1299px) {

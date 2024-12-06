@@ -99,6 +99,9 @@ body{
             text-decoration: none;
             color: colors.$color-text-medium;
           }
+          a:hover {
+            text-decoration: underline;
+          }
         }
       }
       button{
@@ -264,13 +267,14 @@ main{
     flex-wrap: wrap;
     gap: 21px;
     z-index: 4;
+    height: max-content;
     @include responsive.md{
       gap: 70px;
       margin-bottom: 100px;
     }
     @include responsive.md-999{
       max-width: 500px;
-      margin-top: 90px;
+      margin-top: 230px;
     }
     @include responsive.xxl{
       max-width: none;
